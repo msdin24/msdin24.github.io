@@ -1,10 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>MSDIN24 Website</title>
+<meta charset="UTF-8">
+<title>ETE | Electronic Technology</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+  text-align: center;
+  margin: 0;
+}
+
+header {
+  background-color: #003366;
+  color: white;
+  padding: 20px;
+}
+
+.container {
+  padding: 30px;
+}
+
+button {
+  width: 90%;
+  max-width: 400px;
+  padding: 15px;
+  margin: 10px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  background-color: #0066cc;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #004c99;
+}
+</style>
 </head>
+
 <body>
-  <h1>Website is Live</h1>
-  <p>Hosted using GitHub Pages</p>
+
+<header>
+  <h1>Electronic Technology (ETE)</h1>
+  <p>Lecture PPTs & Notes</p>
+</header>
+
+<div class="container">
+
+  <button onclick="openPPT('https://docs.google.com/presentation/d/PASTE_LINK_1')">
+    ETE Unit 1 – Basic Electronics
+  </button>
+
+  <button onclick="openPPT('https://docs.google.com/presentation/d/PASTE_LINK_2')">
+    ETE Unit 2 – Semiconductor Devices
+  </button>
+
+  <button onclick="openPPT('https://docs.google.com/presentation/d/PASTE_LINK_3')">
+    ETE Unit 3 – Amplifiers
+  </button>
+
+  <button onclick="openPPT('https://docs.google.com/presentation/d/PASTE_LINK_4')">
+    ETE Unit 4 – Oscillators
+  </button>
+
+</div>
+
+<script>
+function openPPT(link) {
+  window.open(link, "_blank");
+}
+</script>
+
 </body>
 </html>
