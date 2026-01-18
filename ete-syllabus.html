@@ -1,26 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>SUBJECT | Syllabus</title>
+<meta charset="UTF-8">
+<title>ETE | Notes</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+
 <style>
-body { background:#0f2027; color:white; font-family:Arial; text-align:center; }
-button {
-  padding:14px 22px;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+  color: white;
+}
+
+.navbar {
+  background:#000c1a;
+  padding:10px;
+}
+
+.navbar a {
+  color:#00e6ff;
+  text-decoration:none;
+  padding:12px 18px;
   font-family:Orbitron;
-  background:#00e6ff;
-  border:none;
-  border-radius:8px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+iframe {
+  width: 100%;
+  height: 90vh;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,230,255,0.3);
 }
 </style>
 </head>
+
 <body>
 
-<h1>SUBJECT – Syllabus</h1>
+<div class="navbar">
+  <a href="ete.html">⬅ Back to ETE</a>
+</div>
 
-<button onclick="window.open('SYLLABUS_PDF_LINK','_blank')">
-View / Download Syllabus
-</button>
+<div class="container">
+  <h1 style="font-family:Orbitron;color:#00e6ff;">
+    ETE – Notes
+  </h1>
+
+  <!-- PDF EMBED -->
+  <iframe 
+    src="https://drive.google.com/file/d/1r3rbLtC-PQcbvROwHppyrAy-_tpx93XG/preview">
+  </iframe>
+
+</div>
 
 </body>
 </html>
