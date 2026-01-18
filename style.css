@@ -1,0 +1,113 @@
+/* ========= GLOBAL THEME ========= */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+  color: white;
+}
+
+/* ========= NAVBAR ========= */
+.navbar {
+  background: #000c1a;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.navbar a {
+  color: #00e6ff;
+  text-decoration: none;
+  padding: 12px 18px;
+  font-family: Orbitron;
+}
+.navbar a:hover {
+  background: #00334d;
+  border-radius: 6px;
+}
+
+/* ========= BREADCRUMB ========= */
+.breadcrumb {
+  padding: 10px 20px;
+  font-size: 14px;
+}
+.breadcrumb a {
+  color: #90caf9;
+  text-decoration: none;
+}
+.breadcrumb span {
+  color: #ccc;
+}
+
+/* ========= PAGE ========= */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+h1 {
+  text-align: center;
+  font-family: Orbitron;
+  color: #00e6ff;
+}
+
+/* ========= ACCORDION ========= */
+.accordion {
+  background: rgba(0,0,0,0.75);
+  color: #00e6ff;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  font-family: Orbitron;
+  font-size: 18px;
+  margin-top: 15px;
+  border-radius: 12px;
+}
+.accordion:hover {
+  background: #00334d;
+}
+
+.panel {
+  display: none;
+  padding: 20px;
+  background: rgba(0,0,0,0.6);
+  border-radius: 0 0 12px 12px;
+}
+
+/* ========= BUTTONS ========= */
+.btn {
+  padding: 10px 18px;
+  margin: 6px;
+  font-family: Orbitron;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg,#00e6ff,#0072ff);
+  cursor: pointer;
+  color: black;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* ========= VIEW COUNTER ========= */
+.view-counter {
+  font-size: 13px;
+  color: #90caf9;
+  margin-left: 10px;
+}
+
+/* ========= MOBILE ========= */
+@media (max-width: 768px) {
+  .navbar a {
+    padding: 10px;
+    font-size: 13px;
+  }
+  .accordion {
+    font-size: 16px;
+  }
+}
