@@ -4,104 +4,8 @@
 <meta charset="UTF-8">
 <title>E & TC Department | Digital Learning Portal</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
-
-<style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-  color: white;
-}
-
-/* NAVBAR */
-.navbar {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: #000c1a;
-  padding: 10px;
-}
-
-.navbar a {
-  color: #00e6ff;
-  text-decoration: none;
-  padding: 12px 18px;
-  font-family: 'Orbitron', sans-serif;
-  font-size: 14px;
-}
-
-.navbar a:hover {
-  background-color: #00334d;
-  border-radius: 6px;
-}
-
-/* HEADER */
-.header {
-  text-align: center;
-  padding: 70px 20px;
-}
-
-.header h1 {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 36px;
-  letter-spacing: 2px;
-  color: #00e6ff;
-}
-
-.header p {
-  color: #cfd8dc;
-  font-size: 16px;
-}
-
-/* CONTAINER */
-.container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 20px;
-}
-
-/* CARD */
-.card {
-  background-color: rgba(0, 0, 0, 0.65);
-  padding: 30px;
-  margin-bottom: 30px;
-  border-radius: 14px;
-  box-shadow: 0 0 20px rgba(0,230,255,0.25);
-}
-
-/* BUTTONS */
-.btn {
-  background: linear-gradient(90deg, #00e6ff, #0072ff);
-  border: none;
-  color: black;
-  padding: 16px 24px;
-  font-size: 16px;
-  border-radius: 10px;
-  cursor: pointer;
-  font-family: 'Orbitron', sans-serif;
-  margin: 12px;
-}
-
-.btn:hover {
-  transform: scale(1.06);
-  background: linear-gradient(90deg, #00bcd4, #005eff);
-}
-
-/* GRID */
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 18px;
-  font-size: 14px;
-  color: #90caf9;
-}
-</style>
+<!-- COMMON CSS -->
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -119,30 +23,34 @@ footer {
 </div>
 
 <!-- HEADER -->
-<div class="header">
+<div class="container" style="text-align:center;padding-top:60px;padding-bottom:40px;">
   <h1>Electronics & Telecommunication Department</h1>
-  <p>Digital Learning Resource Portal</p>
+  <p style="color:#cfd8dc;">
+    Digital Learning Resource Portal
+  </p>
 </div>
 
 <!-- MAIN CONTENT -->
 <div class="container">
 
-  <!-- QUICK SUBJECT ACCESS -->
-  <div class="card">
-    <h2 style="font-family:Orbitron;color:#00e6ff;">Subject Quick Access</h2>
+  <!-- SUBJECT QUICK ACCESS -->
+  <div class="accordion">Subject Quick Access</div>
+  <div class="panel" style="display:block;">
 
-    <div class="grid">
+    <div style="text-align:center;">
       <button class="btn" onclick="location.href='ete.html'">ETE</button>
       <button class="btn" onclick="location.href='drt.html'">DRT</button>
       <button class="btn" onclick="location.href='dte.html'">DTE</button>
       <button class="btn" onclick="location.href='dem.html'">DEM</button>
       <button class="btn" onclick="location.href='mwc.html'">MWC</button>
     </div>
+
   </div>
 
   <!-- DEPARTMENT UPDATES -->
-  <div class="card">
-    <h2 style="font-family:Orbitron;color:#00e6ff;">Department Updates</h2>
+  <div class="accordion">Department Updates</div>
+  <div class="panel">
+
     <p>📌 New subject PPTs uploaded</p>
     <p>📌 Semester-wise resources updated</p>
     <p>📌 Students are advised to check updates regularly</p>
@@ -150,19 +58,23 @@ footer {
     <button class="btn" onclick="location.href='notice.html'">
       View All Notices
     </button>
+
   </div>
 
   <!-- ABOUT PORTAL -->
-  <div class="card">
-    <h2 style="font-family:Orbitron;color:#00e6ff;">About This Portal</h2>
+  <div class="accordion">About This Portal</div>
+  <div class="panel">
+
     <p>
       This portal is developed to provide Electronics & Telecommunication
       students with a centralized digital platform for accessing
       subject-wise PPTs, notes, and departmental academic updates.
     </p>
+
     <p>
       Maintained by faculty to support structured and effective learning.
     </p>
+
   </div>
 
 </div>
@@ -171,6 +83,17 @@ footer {
 <footer>
   © MSDIN24 | Electronics & Telecommunication Department
 </footer>
+
+<!-- ACCORDION SCRIPT -->
+<script>
+document.querySelectorAll(".accordion").forEach(acc=>{
+  acc.addEventListener("click",()=>{
+    const panel = acc.nextElementSibling;
+    panel.style.display =
+      panel.style.display === "block" ? "none" : "block";
+  });
+});
+</script>
 
 </body>
 </html>
