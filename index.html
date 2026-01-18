@@ -167,5 +167,40 @@ document.querySelectorAll(".accordion").forEach(acc=>{
 });
 </script>
 
+ <div style="text-align:center;margin-top:15px;font-size:14px;">
+  👁️ Total Site Visits:
+  <span id="global-counter" style="color:#00e6ff;font-weight:bold;">--</span>
+  &nbsp; | &nbsp;
+  📄 Page Views:
+  <span id="page-counter" style="color:#00e6ff;font-weight:bold;">--</span>
+</div>
+
+<script>
+/* ---------- GLOBAL COUNTER ---------- */
+fetch("https://api.countapi.xyz/create?namespace=msdin24&key=portal&value=0")
+  .then(() => fetch("https://api.countapi.xyz/hit/msdin24/portal"))
+  .then(res => res.json())
+  .then(data => {
+    document.getElementById("global-counter").innerText = data.value;
+  })
+  .catch(err => {
+    console.error("Global counter error:", err);
+  });
+
+/* ---------- PAGE COUNTER ---------- */
+const pageKey = window.location.pathname.replace(/\W/g, "") || "home";
+
+fetch(`https://api.countapi.xyz/create?namespace=msdin24&key=${pageKey}&value=0`)
+  .then(() => fetch(`https://api.countapi.xyz/hit/msdin24/${pageKey}`))
+  .then(res => res.json())
+  .then(data => {
+    document.getElementById("page-counter").innerText = data.value;
+  })
+  .catch(err => {
+    console.error("Page counter error:", err);
+  });
+</script>
+
+
 </body>
 </html>
