@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <title>E & TC Department | Digital Learning Portal</title>
 
-<!-- Digital Font -->
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
 
 <style>
@@ -12,7 +11,7 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-  color: #ffffff;
+  color: white;
 }
 
 /* NAVBAR */
@@ -39,12 +38,12 @@ body {
 /* HEADER */
 .header {
   text-align: center;
-  padding: 60px 20px;
+  padding: 70px 20px;
 }
 
 .header h1 {
   font-family: 'Orbitron', sans-serif;
-  font-size: 34px;
+  font-size: 36px;
   letter-spacing: 2px;
   color: #00e6ff;
 }
@@ -64,10 +63,10 @@ body {
 /* CARD */
 .card {
   background-color: rgba(0, 0, 0, 0.65);
-  padding: 25px;
-  margin-bottom: 25px;
-  border-radius: 12px;
-  box-shadow: 0 0 18px rgba(0,230,255,0.25);
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 14px;
+  box-shadow: 0 0 20px rgba(0,230,255,0.25);
 }
 
 /* BUTTONS */
@@ -75,12 +74,12 @@ body {
   background: linear-gradient(90deg, #00e6ff, #0072ff);
   border: none;
   color: black;
-  padding: 14px 22px;
+  padding: 16px 24px;
   font-size: 16px;
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: pointer;
   font-family: 'Orbitron', sans-serif;
-  margin: 10px;
+  margin: 12px;
 }
 
 .btn:hover {
@@ -88,10 +87,17 @@ body {
   background: linear-gradient(90deg, #00bcd4, #005eff);
 }
 
+/* GRID */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 /* FOOTER */
 footer {
   text-align: center;
-  padding: 15px;
+  padding: 18px;
   font-size: 14px;
   color: #90caf9;
 }
@@ -100,7 +106,7 @@ footer {
 
 <body>
 
-<!-- NAVIGATION BAR -->
+<!-- NAVBAR -->
 <div class="navbar">
   <a href="index.html">Home</a>
   <a href="ete.html">ETE</a>
@@ -115,37 +121,47 @@ footer {
 <!-- HEADER -->
 <div class="header">
   <h1>Electronics & Telecommunication Department</h1>
-  <p>Digital Learning Resource Portal for Students</p>
+  <p>Digital Learning Resource Portal</p>
 </div>
 
 <!-- MAIN CONTENT -->
 <div class="container">
 
-  <!-- QUICK ACCESS -->
+  <!-- QUICK SUBJECT ACCESS -->
   <div class="card">
-    <h2 style="font-family:Orbitron;color:#00e6ff;">Quick Access – Subjects</h2>
-    <button class="btn" onclick="location.href='ete.html'">ETE</button>
-    <button class="btn" onclick="location.href='drt.html'">DRT</button>
-    <button class="btn" onclick="location.href='dte.html'">DTE</button>
-    <button class="btn" onclick="location.href='dem.html'">DEM</button>
-    <button class="btn" onclick="location.href='mwc.html'">MWC</button>
+    <h2 style="font-family:Orbitron;color:#00e6ff;">Subject Quick Access</h2>
+
+    <div class="grid">
+      <button class="btn" onclick="location.href='ete.html'">ETE</button>
+      <button class="btn" onclick="location.href='drt.html'">DRT</button>
+      <button class="btn" onclick="location.href='dte.html'">DTE</button>
+      <button class="btn" onclick="location.href='dem.html'">DEM</button>
+      <button class="btn" onclick="location.href='mwc.html'">MWC</button>
+    </div>
   </div>
 
-  <!-- UPDATES -->
+  <!-- DEPARTMENT UPDATES -->
   <div class="card">
     <h2 style="font-family:Orbitron;color:#00e6ff;">Department Updates</h2>
-    <p>📌 Latest ETE PPT uploaded</p>
+    <p>📌 New subject PPTs uploaded</p>
     <p>📌 Semester-wise resources updated</p>
-    <button class="btn" onclick="location.href='notice.html'">View All Updates</button>
+    <p>📌 Students are advised to check updates regularly</p>
+
+    <button class="btn" onclick="location.href='notice.html'">
+      View All Notices
+    </button>
   </div>
 
-  <!-- INFO -->
+  <!-- ABOUT PORTAL -->
   <div class="card">
     <h2 style="font-family:Orbitron;color:#00e6ff;">About This Portal</h2>
     <p>
-      This digital portal is developed for Electronics & Telecommunication
-      students to access subject-wise PPTs, notes, and academic updates
-      in one centralized platform.
+      This portal is developed to provide Electronics & Telecommunication
+      students with a centralized digital platform for accessing
+      subject-wise PPTs, notes, and departmental academic updates.
+    </p>
+    <p>
+      Maintained by faculty to support structured and effective learning.
     </p>
   </div>
 
