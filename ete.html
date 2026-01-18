@@ -2,87 +2,21 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>ETE | Subject Dashboard</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+<!-- COMMON CSS -->
+<link rel="stylesheet" href="style.css">
 
-<style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-  color: white;
-}
-
-.navbar {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: #000c1a;
-  padding: 10px;
-}
-
-.navbar a {
-  color: #00e6ff;
-  text-decoration: none;
-  padding: 12px 18px;
-  font-family: 'Orbitron', sans-serif;
-}
-
-.navbar a:hover {
-  background-color: #00334d;
-  border-radius: 6px;
-}
-
-.header {
-  text-align: center;
-  padding: 50px 20px;
-}
-
-.header h1 {
-  font-family: 'Orbitron', sans-serif;
-  color: #00e6ff;
-  letter-spacing: 2px;
-}
-
-.container {
-  max-width: 900px;
-  margin: auto;
-  padding: 20px;
-}
-
-.card {
-  background-color: rgba(0,0,0,0.65);
-  padding: 30px;
-  border-radius: 14px;
-  box-shadow: 0 0 18px rgba(0,230,255,0.25);
-  text-align: center;
-}
-
-.btn {
-  width: 80%;
-  max-width: 350px;
-  padding: 16px;
-  margin: 15px auto;
-  display: block;
-  font-family: 'Orbitron', sans-serif;
-  font-size: 16px;
-  border: none;
-  border-radius: 10px;
-  background: linear-gradient(90deg, #00e6ff, #0072ff);
-  color: black;
-  cursor: pointer;
-}
-
-.btn:hover {
-  transform: scale(1.06);
-}
-</style>
+<!-- ICONS -->
+<link rel="stylesheet"
+ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
+<!-- NAVBAR -->
 <div class="navbar">
   <a href="index.html">Home</a>
   <a href="ete.html">ETE</a>
@@ -94,28 +28,41 @@ body {
   <a href="about.html">About</a>
 </div>
 
-<div class="header">
-  <h1>316337-EMERGING TRENDS IN ELECTRONICS(ETE) </h1>
-  <p>Subject Resource Dashboard</p>
+<!-- HEADER -->
+<div class="container" style="text-align:center;padding-top:40px;">
+  <h1>316337 – Emerging Trends in Electronics (ETE)</h1>
+  <p style="color:#cfd8dc;">Subject Resource Dashboard</p>
 </div>
 
 <div class="container">
-  <div class="card">
+  <div style="
+    max-width:600px;
+    margin:auto;
+    background:rgba(0,0,0,0.6);
+    padding:30px;
+    border-radius:16px;
+    text-align:center;
+  ">
 
     <button class="btn" onclick="location.href='ete-syllabus.html'">
-      Syllabus
+      <i class="fa-solid fa-book"></i> Syllabus
     </button>
 
     <button class="btn" onclick="location.href='ete-notes.html'">
-      Notes
+      <i class="fa-solid fa-file-lines"></i> Notes
+    </button>
+
+    <!-- NEW ESP32 SLIDES BUTTON -->
+    <button class="btn" onclick="location.href='ete-esp32-slides.html'">
+      <i class="fa-solid fa-microchip"></i> ESP32 Slides
     </button>
 
     <button class="btn" onclick="location.href='ete-qbank.html'">
-      Question Bank
+      <i class="fa-solid fa-clipboard-question"></i> Question Bank
     </button>
 
     <button class="btn" onclick="location.href='ete-pyq.html'">
-      Previous Year Question Papers
+      <i class="fa-solid fa-file-pdf"></i> Previous Year Question Papers
     </button>
 
   </div>
