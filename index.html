@@ -4,10 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>E & TC Department | Digital Learning Portal</title>
+<title>E & TC | Digital Learning Portal</title>
 
 <!-- COMMON CSS -->
 <link rel="stylesheet" href="style.css">
+
+<!-- ICONS -->
+<link rel="stylesheet"
+ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
@@ -25,19 +29,83 @@
 </div>
 
 <!-- HEADER -->
-<div class="container" style="text-align:center;padding-top:60px;padding-bottom:40px;">
-  <h1>Electronics & Telecommunication Department</h1>
+<div class="container" style="text-align:center;padding-top:60px;padding-bottom:30px;">
+  <h1>Electronics & Telecommunication</h1>
+
   <p style="color:#cfd8dc;">
     Digital Learning Resource Portal
+  </p>
+
+  <p style="font-size:14px;color:#90caf9;">
+    Faculty-curated academic resources for student learning
   </p>
 </div>
 
 <!-- MAIN CONTENT -->
 <div class="container">
 
+  <!-- INSTRUCTOR PROFILE -->
+  <div class="accordion">Instructor Profile</div>
+  <div class="panel" style="display:block;">
+
+    <div style="
+      max-width:650px;
+      margin:auto;
+      background:rgba(0,0,0,0.6);
+      padding:30px;
+      border-radius:16px;
+      text-align:center;
+    ">
+
+      <h2 style="font-family:Orbitron;color:#00e6ff;">
+        Mohammad Shafiquddin
+      </h2>
+
+      <p style="color:#cfd8dc;margin-top:8px;">
+        Senior Lecturer<br>
+        Electronics & Telecommunication Engineering
+      </p>
+
+      <p style="font-size:14px;color:#90caf9;margin-top:12px;">
+        Embedded Systems • IoT • Industrial Automation •
+        Emerging Trends in Electronics
+      </p>
+
+      <!-- PROFESSIONAL LINKS -->
+      <div style="margin-top:18px;">
+
+        <a href="https://www.linkedin.com/in/YOUR_LINKEDIN"
+           target="_blank"
+           style="color:#00e6ff;font-size:20px;margin:0 12px;">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+
+        <a href="https://github.com/msdin24"
+           target="_blank"
+           style="color:#00e6ff;font-size:20px;margin:0 12px;">
+          <i class="fa-brands fa-github"></i>
+        </a>
+
+        <a href="https://www.youtube.com/@YOUR_CHANNEL"
+           target="_blank"
+           style="color:#00e6ff;font-size:20px;margin:0 12px;">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+
+      </div>
+
+      <button class="btn" style="margin-top:20px;"
+              onclick="location.href='about.html'">
+        View Full Profile
+      </button>
+
+    </div>
+
+  </div>
+
   <!-- SUBJECT QUICK ACCESS -->
   <div class="accordion">Subject Quick Access</div>
-  <div class="panel" style="display:block;">
+  <div class="panel">
 
     <div style="text-align:center;">
       <button class="btn" onclick="location.href='ete.html'">ETE</button>
@@ -49,16 +117,16 @@
 
   </div>
 
-  <!-- DEPARTMENT UPDATES -->
-  <div class="accordion">Department Updates</div>
+  <!-- ACADEMIC UPDATES -->
+  <div class="accordion">Academic Updates</div>
   <div class="panel">
 
-    <p>📌 New subject PPTs uploaded</p>
-    <p>📌 Semester-wise resources updated</p>
+    <p>📌 New subject presentations and notes uploaded</p>
+    <p>📌 Unit-wise and semester-wise resources updated</p>
     <p>📌 Students are advised to check updates regularly</p>
 
     <button class="btn" onclick="location.href='notice.html'">
-      View All Notices
+      View All Updates
     </button>
 
   </div>
@@ -68,13 +136,14 @@
   <div class="panel">
 
     <p>
-      This portal is developed to provide Electronics & Telecommunication
-      students with a centralized digital platform for accessing
-      subject-wise PPTs, notes, and departmental academic updates.
+      This portal provides structured, subject-wise academic resources
+      including notes, presentations, question banks, and learning updates
+      to support effective teaching and self-learning.
     </p>
 
     <p>
-      Maintained by faculty to support structured and effective learning.
+      The content is curated and maintained to align with curriculum
+      requirements and practical learning outcomes.
     </p>
 
   </div>
@@ -83,13 +152,14 @@
 
 <!-- FOOTER -->
 <footer>
-  © MSDIN24 | Electronics & Telecommunication Department
+  © Mohammad Shafiquddin | Senior Lecturer – Electronics & Telecommunication
 </footer>
 
 <!-- ACCORDION SCRIPT -->
 <script>
 document.querySelectorAll(".accordion").forEach(acc=>{
   acc.addEventListener("click",()=>{
+    acc.classList.toggle("active");
     const panel = acc.nextElementSibling;
     panel.style.display =
       panel.style.display === "block" ? "none" : "block";
