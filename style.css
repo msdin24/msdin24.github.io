@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #ffffff;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #000c1a;
+  padding: 10px;
+}
+
+.navbar a {
+  color: #00e6ff;
+  text-decoration: none;
+  padding: 12px 18px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 14px;
+}
+
+.navbar a:hover {
+  background-color: #00334d;
+  border-radius: 6px;
+}
+
+/* HEADER */
+.header {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.header h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 32px;
+  letter-spacing: 2px;
+  color: #00e6ff;
+}
+
+.header p {
+  color: #cfd8dc;
+}
+
+/* CONTENT BOX */
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px;
+}
+
+.card {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,230,255,0.2);
+}
+
+/* BUTTONS */
+button {
+  background: linear-gradient(90deg, #00e6ff, #0072ff);
+  border: none;
+  color: black;
+  padding: 14px 22px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: 'Orbitron', sans-serif;
+  margin: 10px;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #00bcd4, #005eff);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  color: #90caf9;
+}
