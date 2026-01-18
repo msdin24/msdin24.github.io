@@ -2,59 +2,98 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Electronics & Telecommunication Department</title>
+<title>E & TC Department | Digital Learning Portal</title>
+
+<!-- Digital Font -->
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
 
 <style>
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #f4f6f8;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #ffffff;
 }
 
-/* Top Navigation Bar */
+/* NAVBAR */
 .navbar {
-  background-color: #002855;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  background-color: #000c1a;
   padding: 10px;
 }
 
 .navbar a {
-  color: white;
+  color: #00e6ff;
   text-decoration: none;
   padding: 12px 18px;
-  font-size: 16px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 14px;
 }
 
 .navbar a:hover {
-  background-color: #004080;
-  border-radius: 5px;
+  background-color: #00334d;
+  border-radius: 6px;
 }
 
-/* Header */
+/* HEADER */
 .header {
   text-align: center;
-  padding: 40px 20px;
-  background-color: #e6eef6;
+  padding: 60px 20px;
 }
 
 .header h1 {
-  margin-bottom: 10px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 34px;
+  letter-spacing: 2px;
+  color: #00e6ff;
 }
 
+.header p {
+  color: #cfd8dc;
+  font-size: 16px;
+}
+
+/* CONTAINER */
 .container {
-  padding: 30px;
-  text-align: center;
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
 }
 
-.notice {
-  background-color: white;
-  padding: 20px;
+/* CARD */
+.card {
+  background-color: rgba(0, 0, 0, 0.65);
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 18px rgba(0,230,255,0.25);
+}
+
+/* BUTTONS */
+.btn {
+  background: linear-gradient(90deg, #00e6ff, #0072ff);
+  border: none;
+  color: black;
+  padding: 14px 22px;
+  font-size: 16px;
   border-radius: 8px;
-  max-width: 700px;
-  margin: auto;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  cursor: pointer;
+  font-family: 'Orbitron', sans-serif;
+  margin: 10px;
+}
+
+.btn:hover {
+  transform: scale(1.06);
+  background: linear-gradient(90deg, #00bcd4, #005eff);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  color: #90caf9;
 }
 </style>
 </head>
@@ -69,25 +108,53 @@ body {
   <a href="dte.html">DTE</a>
   <a href="dem.html">DEM</a>
   <a href="mwc.html">MWC</a>
-  <a href="notice.html">Department Updates</a>
+  <a href="notice.html">Updates</a>
+  <a href="about.html">About</a>
 </div>
 
 <!-- HEADER -->
 <div class="header">
   <h1>Electronics & Telecommunication Department</h1>
-  <p>Study Resources • PPTs • Notices</p>
+  <p>Digital Learning Resource Portal for Students</p>
 </div>
 
-<!-- CONTENT -->
+<!-- MAIN CONTENT -->
 <div class="container">
-  <div class="notice">
-    <h2>Welcome Students</h2>
+
+  <!-- QUICK ACCESS -->
+  <div class="card">
+    <h2 style="font-family:Orbitron;color:#00e6ff;">Quick Access – Subjects</h2>
+    <button class="btn" onclick="location.href='ete.html'">ETE</button>
+    <button class="btn" onclick="location.href='drt.html'">DRT</button>
+    <button class="btn" onclick="location.href='dte.html'">DTE</button>
+    <button class="btn" onclick="location.href='dem.html'">DEM</button>
+    <button class="btn" onclick="location.href='mwc.html'">MWC</button>
+  </div>
+
+  <!-- UPDATES -->
+  <div class="card">
+    <h2 style="font-family:Orbitron;color:#00e6ff;">Department Updates</h2>
+    <p>📌 Latest ETE PPT uploaded</p>
+    <p>📌 Semester-wise resources updated</p>
+    <button class="btn" onclick="location.href='notice.html'">View All Updates</button>
+  </div>
+
+  <!-- INFO -->
+  <div class="card">
+    <h2 style="font-family:Orbitron;color:#00e6ff;">About This Portal</h2>
     <p>
-      Use the top menu to access subject-wise PPTs, notes,
-      and department updates.
+      This digital portal is developed for Electronics & Telecommunication
+      students to access subject-wise PPTs, notes, and academic updates
+      in one centralized platform.
     </p>
   </div>
+
 </div>
+
+<!-- FOOTER -->
+<footer>
+  © MSDIN24 | Electronics & Telecommunication Department
+</footer>
 
 </body>
 </html>
