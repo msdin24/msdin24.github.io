@@ -166,6 +166,15 @@
 
 </div>
 
+ <div style="text-align:center;margin-top:15px;font-size:14px;">
+  👁️ Total Site Visits:
+  <span id="global-counter" style="color:#00e6ff;font-weight:bold;">--</span>
+  &nbsp; | &nbsp;
+  📄 Page Views:
+  <span id="page-counter" style="color:#00e6ff;font-weight:bold;">--</span>
+</div>
+
+
 <!-- ACCORDION SCRIPT -->
 <script>
 document.querySelectorAll(".accordion").forEach(acc=>{
@@ -177,6 +186,25 @@ document.querySelectorAll(".accordion").forEach(acc=>{
   });
 });
 </script>
+
+ <script>
+/* ---------- GLOBAL COUNTER ---------- */
+fetch("https://api.countapi.xyz/hit/msdin24-portal/visits")
+  .then(res => res.json())
+  .then(data => {
+    document.getElementById("global-counter").innerText = data.value;
+  });
+
+/* ---------- PAGE COUNTER ---------- */
+const pageKey = window.location.pathname.replace(/\W/g, "");
+
+fetch("https://api.countapi.xyz/hit/msdin24-" + pageKey + "/views")
+  .then(res => res.json())
+  .then(data => {
+    document.getElementById("page-counter").innerText = data.value;
+  });
+</script>
+
 
 </body>
 </html>
