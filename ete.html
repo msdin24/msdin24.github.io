@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ETE | Subject Dashboard</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #000c1a;
+  padding: 10px;
+}
+
+.navbar a {
+  color: #00e6ff;
+  text-decoration: none;
+  padding: 12px 18px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.navbar a:hover {
+  background-color: #00334d;
+  border-radius: 6px;
+}
+
+.header {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.header h1 {
+  font-family: 'Orbitron', sans-serif;
+  color: #00e6ff;
+  letter-spacing: 2px;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.card {
+  background-color: rgba(0,0,0,0.65);
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 0 18px rgba(0,230,255,0.25);
+  text-align: center;
+}
+
+.btn {
+  width: 80%;
+  max-width: 350px;
+  padding: 16px;
+  margin: 15px auto;
+  display: block;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #00e6ff, #0072ff);
+  color: black;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: scale(1.06);
+}
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="ete.html">ETE</a>
+  <a href="drt.html">DRT</a>
+  <a href="dte.html">DTE</a>
+  <a href="dem.html">DEM</a>
+  <a href="mwc.html">MWC</a>
+  <a href="notice.html">Updates</a>
+  <a href="about.html">About</a>
+</div>
+
+<div class="header">
+  <h1>Electronic Technology (ETE)</h1>
+  <p>Subject Resource Dashboard</p>
+</div>
+
+<div class="container">
+  <div class="card">
+
+    <button class="btn" onclick="location.href='ete-syllabus.html'">
+      Syllabus
+    </button>
+
+    <button class="btn" onclick="location.href='ete-notes.html'">
+      Notes
+    </button>
+
+    <button class="btn" onclick="location.href='ete-qbank.html'">
+      Question Bank
+    </button>
+
+    <button class="btn" onclick="location.href='ete-pyq.html'">
+      Previous Year Question Papers
+    </button>
+
+  </div>
+</div>
+
+</body>
+</html>
