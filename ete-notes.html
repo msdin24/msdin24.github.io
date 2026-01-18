@@ -4,105 +4,31 @@
 <meta charset="UTF-8">
 <title>ETE | Notes</title>
 
-<!-- Digital Font -->
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+<!-- COMMON CSS -->
+<link rel="stylesheet" href="style.css">
 
-<!-- Icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-<style>
-body{
-  margin:0;
-  font-family:Arial, sans-serif;
-  background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
-  color:white;
-}
-
-/* NAVBAR */
-.navbar{
-  background:#000c1a;
-  padding:10px;
-}
-.navbar a{
-  color:#00e6ff;
-  text-decoration:none;
-  padding:12px 18px;
-  font-family:Orbitron;
-}
-
-/* PAGE */
-.container{
-  max-width:1100px;
-  margin:auto;
-  padding:20px;
-}
-h1{
-  text-align:center;
-  font-family:Orbitron;
-  color:#00e6ff;
-}
-
-/* ACCORDION */
-.accordion{
-  background:rgba(0,0,0,0.75);
-  color:#00e6ff;
-  cursor:pointer;
-  padding:18px;
-  width:100%;
-  border:none;
-  text-align:left;
-  outline:none;
-  font-family:Orbitron;
-  font-size:18px;
-  margin-top:15px;
-  border-radius:12px;
-}
-.accordion:hover{
-  background:#00334d;
-}
-
-.panel{
-  display:none;
-  padding:20px;
-  background:rgba(0,0,0,0.6);
-  border-radius:0 0 12px 12px;
-}
-
-/* TOPICS */
-.topic{
-  margin:14px 0;
-}
-
-/* BUTTONS */
-button.topic-btn{
-  padding:10px 18px;
-  margin:6px;
-  font-family:Orbitron;
-  border:none;
-  border-radius:8px;
-  background:linear-gradient(90deg,#00e6ff,#0072ff);
-  cursor:pointer;
-  color:black;
-  display:inline-flex;
-  align-items:center;
-  gap:8px;
-}
-button.topic-btn:hover{
-  transform:scale(1.05);
-}
-</style>
+<!-- ICONS -->
+<link rel="stylesheet"
+ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
-<!-- NAVIGATION -->
+<!-- NAVBAR -->
 <div class="navbar">
   <a href="index.html">Home</a>
-  <a href="ete.html">Back to ETE</a>
+  <a href="ete.html">ETE</a>
+</div>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb">
+  <a href="index.html">Home</a> ›
+  <a href="ete.html">ETE</a> ›
+  <span>Notes</span>
 </div>
 
 <div class="container">
-<h1>316337-EMERGING TRENDS IN ELECTRONICS (ETE) – Notes</h1>
+<h1>316337 – Emerging Trends in Electronics (ETE) – Notes</h1>
 
 <!-- ================= UNIT I ================= -->
 <button class="accordion">Unit I – Advanced Processors and Technology</button>
@@ -111,37 +37,30 @@ button.topic-btn:hover{
   <div class="topic">
     <b>1.1 Advanced Processors (GPU)</b><br>
 
-    <!-- PPT LINK PROVIDED BY YOU -->
-    <button class="topic-btn"
+    <button class="btn"
       onclick="window.open(
       'https://docs.google.com/presentation/d/1VhVfhpI29_7cT0MTE4Atwq1V4_WR1rBxCcQ3uhSG2_U/edit?usp=sharing',
       '_blank')">
       <i class="fa-solid fa-file-powerpoint"></i> PPT
     </button>
+
+    <span class="view-counter" id="v11">Views: 0</span>
   </div>
 
   <div class="topic">
-    <b>1.2 ESP32 </b><br>
-    <button class="topic-btn">
-      <i class="fa-solid fa-file-pdf"></i> Notes
-    </button>
+    <b>1.2 ESP32</b><br>
+    <button class="btn"><i class="fa-solid fa-file-pdf"></i> Notes</button>
   </div>
 
   <div class="topic">
     <b>1.3 Artificial Intelligence / Machine Learning</b><br>
-    <button class="topic-btn">
-      <i class="fa-solid fa-file-pdf"></i> Notes
-    </button>
+    <button class="btn"><i class="fa-solid fa-file-pdf"></i> Notes</button>
   </div>
 
   <div class="topic">
     <b>1.4 Quantum Computing</b><br>
-    <button class="topic-btn">
-      <i class="fa-solid fa-file-pdf"></i> Notes
-    </button>
+    <button class="btn"><i class="fa-solid fa-file-pdf"></i> Notes</button>
   </div>
-
- 
 
 </div>
 
@@ -149,29 +68,24 @@ button.topic-btn:hover{
 <button class="accordion">Unit II – Smart Manufacturing Processes and Tools</button>
 <div class="panel">
 
-  <div class="topic">
-    <b>2.1 Surface Mount Technology (SMT)</b><br>
-    <button class="topic-btn"><i class="fa-solid fa-file-pdf"></i> Notes</button>
+  <div class="topic"><b>2.1 Surface Mount Technology (SMT)</b><br>
+    <button class="btn"><i class="fa-solid fa-file-pdf"></i> Notes</button>
   </div>
 
-  <div class="topic">
-    <b>2.2 HMI & Robotics</b><br>
-    <button class="topic-btn"><i class="fa-solid fa-file-pdf"></i> Notes</button>
+  <div class="topic"><b>2.2 HMI & Robotics</b><br>
+    <button class="btn"><i class="fa-solid fa-file-pdf"></i> Notes</button>
   </div>
 
-  <div class="topic">
-    <b>2.3 Electronic Manufacturing Process</b><br>
-    <button class="topic-btn"><i class="fa-solid fa-file-pdf"></i> Notes</button>
+  <div class="topic"><b>2.3 Electronic Manufacturing Process</b><br>
+    <button class="btn"><i class="fa-solid fa-file-pdf"></i> Notes</button>
   </div>
 
-  <div class="topic">
-    <b>2.4 Environmental Standards (EPEAT & RoHS)</b><br>
-    <button class="topic-btn"><i class="fa-solid fa-file-pdf"></i> Notes</button>
+  <div class="topic"><b>2.4 Environmental Standards (EPEAT & RoHS)</b><br>
+    <button class="btn"><i class="fa-solid fa-file-pdf"></i> Notes</button>
   </div>
 
-  <div class="topic">
-    <b>2.5 Open Source Assembly & Testing (OSAT)</b><br>
-    <button class="topic-btn"><i class="fa-solid fa-file-pdf"></i> Notes</button>
+  <div class="topic"><b>2.5 Open Source Assembly & Testing (OSAT)</b><br>
+    <button class="btn"><i class="fa-solid fa-file-pdf"></i> Notes</button>
   </div>
 
 </div>
@@ -181,23 +95,23 @@ button.topic-btn:hover{
 <div class="panel">
 
   <div class="topic"><b>3.1 NGN Architecture</b><br>
-    <button class="topic-btn"><i class="fa-solid fa-file-pdf"></i> Notes</button>
+    <button class="btn"><i class="fa-solid fa-file-pdf"></i> Notes</button>
   </div>
 
   <div class="topic"><b>3.2 Spectrum & Mobile Generations</b><br>
-    <button class="topic-btn"><i class="fa-solid fa-file-pdf"></i> Notes</button>
+    <button class="btn"><i class="fa-solid fa-file-pdf"></i> Notes</button>
   </div>
 
   <div class="topic"><b>3.3 NGN Core & MPLS</b><br>
-    <button class="topic-btn"><i class="fa-solid fa-file-pdf"></i> Notes</button>
+    <button class="btn"><i class="fa-solid fa-file-pdf"></i> Notes</button>
   </div>
 
   <div class="topic"><b>3.4 FTTH Technology</b><br>
-    <button class="topic-btn"><i class="fa-solid fa-file-pdf"></i> Notes</button>
+    <button class="btn"><i class="fa-solid fa-file-pdf"></i> Notes</button>
   </div>
 
   <div class="topic"><b>3.5 SDH & OTN</b><br>
-    <button class="topic-btn"><i class="fa-solid fa-file-pdf"></i> Notes</button>
+    <button class="btn"><i class="fa-solid fa-file-pdf"></i> Notes</button>
   </div>
 
 </div>
@@ -207,23 +121,23 @@ button.topic-btn:hover{
 <div class="panel">
 
   <div class="topic"><b>4.1 IoT Architecture</b><br>
-    <button class="topic-btn"><i class="fa-solid fa-file-pdf"></i> Notes</button>
+    <button class="btn"><i class="fa-solid fa-file-pdf"></i> Notes</button>
   </div>
 
   <div class="topic"><b>4.2 Cloud Computing & ThingSpeak</b><br>
-    <button class="topic-btn"><i class="fa-solid fa-file-pdf"></i> Notes</button>
+    <button class="btn"><i class="fa-solid fa-file-pdf"></i> Notes</button>
   </div>
 
   <div class="topic"><b>4.3 Industrial IoT Applications</b><br>
-    <button class="topic-btn"><i class="fa-solid fa-file-pdf"></i> Notes</button>
+    <button class="btn"><i class="fa-solid fa-file-pdf"></i> Notes</button>
   </div>
 
   <div class="topic"><b>4.4 Industry 5.0</b><br>
-    <button class="topic-btn"><i class="fa-solid fa-file-pdf"></i> Notes</button>
+    <button class="btn"><i class="fa-solid fa-file-pdf"></i> Notes</button>
   </div>
 
   <div class="topic"><b>4.5 AR / VR / MR</b><br>
-    <button class="topic-btn"><i class="fa-solid fa-file-pdf"></i> Notes</button>
+    <button class="btn"><i class="fa-solid fa-file-pdf"></i> Notes</button>
   </div>
 
 </div>
@@ -233,35 +147,42 @@ button.topic-btn:hover{
 <div class="panel">
 
   <div class="topic"><b>5.1 Types of Drones</b><br>
-    <button class="topic-btn"><i class="fa-solid fa-file-pdf"></i> Notes</button>
+    <button class="btn"><i class="fa-solid fa-file-pdf"></i> Notes</button>
   </div>
 
   <div class="topic"><b>5.2 Drone Hardware Components</b><br>
-    <button class="topic-btn"><i class="fa-solid fa-file-pdf"></i> Notes</button>
+    <button class="btn"><i class="fa-solid fa-file-pdf"></i> Notes</button>
   </div>
 
   <div class="topic"><b>5.3 DGCA Rules & Regulations</b><br>
-    <button class="topic-btn"><i class="fa-solid fa-file-pdf"></i> Notes</button>
+    <button class="btn"><i class="fa-solid fa-file-pdf"></i> Notes</button>
   </div>
 
   <div class="topic"><b>5.4 Drone Applications</b><br>
-    <button class="topic-btn"><i class="fa-solid fa-file-pdf"></i> Notes</button>
+    <button class="btn"><i class="fa-solid fa-file-pdf"></i> Notes</button>
   </div>
 
 </div>
 
 </div>
 
-<!-- ACCORDION SCRIPT -->
+<!-- ACCORDION + VIEW COUNTER SCRIPT -->
 <script>
-var acc = document.getElementsByClassName("accordion");
-for (var i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function () {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    panel.style.display = panel.style.display === "block" ? "none" : "block";
+/* Accordion */
+document.querySelectorAll(".accordion").forEach(acc=>{
+  acc.addEventListener("click",()=>{
+    const panel = acc.nextElementSibling;
+    panel.style.display =
+      panel.style.display === "block" ? "none" : "block";
   });
-}
+});
+
+/* View Counter (1.1) */
+let key="ete_1_1_views";
+let views=localStorage.getItem(key)||0;
+views++;
+localStorage.setItem(key,views);
+document.getElementById("v11").innerText="Views: "+views;
 </script>
 
 </body>
