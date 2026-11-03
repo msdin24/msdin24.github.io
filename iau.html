@@ -2,31 +2,108 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>IAU - IoT Applications</title>
-<link rel="stylesheet" href="style.css">
+<title>IAU – IoT Applications</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- GLOBAL STYLES (relative to the root) -->
+<link rel="stylesheet" href="../style.css">
+
+<!-- FONT‑AWE­SOME ICONS -->
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+
+<!-- --------------------------------------------------------------
+     NAVBAR – uses the same class as every other page
+     -------------------------------------------------------------- -->
 <div class="navbar">
-  <a href="index.html">Home</a>
-  <a href="ete.html">ETE</a>
-  <a href="drt.html">DRT</a>
-  <a href="dte.html">DTE</a>
-  <a href="dem.html">DEM</a>
-  <a href="mwc.html">MWC</a>
-  <a href="notice.html">Updates</a>
-  <a href="about.html">About</a>
+  <a href="../home/index.html">Home</a>
   <a href="iau.html">IAU</a>
+  <a href="../ete/ete.html">ETE</a>
+  <a href="../drt/drt.html">DRT</a>
+  <a href="../dte/dte.html">DTE</a>
+  <a href="../dem/dem.html">DEM</a>
+  <a href="../mwc/mwc.html">MWC</a>
+  <a href="../notice/notice.html">Updates</a>
+  <a href="../about/about.html">About</a>
 </div>
-<div class="container" style="text-align:center;padding-top:60px;padding-bottom:30px;">
-  <h1>IAU - IoT Applications</h1>
-  <p style="color:#cfd8dc;">Internet of Things resources for the IAU course.</p>
-  <button class="btn" onclick="location.href='iau-syllabus.html'">Syllabus</button>
-  <button class="btn" onclick="location.href='iau-notes.html'">Notes</button>
-  <button class="btn" onclick="location.href='iau-qbank.html'">Question Bank</button>
-  <button class="btn" onclick="location.href='iau-pyq.html'">Previous Year Question Papers</button>
+
+<!-- --------------------------------------------------------------
+     HEADER – centered title + short description
+     -------------------------------------------------------------- -->
+<div class="container"
+     style="text-align:center;padding-top:60px;padding-bottom:30px;">
+  <h1>IAU – Internet of Things Applications</h1>
+  <p style="color:#cfd8dc;">
+    Subject‑wise IoT resources for the IAU course
+  </p>
 </div>
-<footer>
+
+<!-- --------------------------------------------------------------
+     QUICK‑ACCESS BUTTONS (desktop & mobile friendly)
+     -------------------------------------------------------------- -->
+<div class="container" style="text-align:center;">
+  <button class="btn"
+          onclick="location.href='iau-syllabus.html'">
+    <i class="fa-solid fa-book"></i> Syllabus
+  </button>
+
+  <button class="btn"
+          onclick="location.href='iau-notes.html'">
+    <i class="fa-solid fa-file-lines"></i> Notes
+  </button>
+
+  <button class="btn"
+          onclick="location.href='iau-qbank.html'">
+    <i class="fa-solid fa-clipboard-question"></i> Question Bank
+  </button>
+
+  <button class="btn"
+          onclick="location.href='iau-pyq.html'">
+    <i class="fa-solid fa-file-pdf"></i> Previous Year Question Papers
+  </button>
+</div>
+
+<!-- --------------------------------------------------------------
+     OPTIONAL – you can add a short description or an accordion
+     with extra links (e.g., lab materials, external resources)
+     -------------------------------------------------------------- -->
+<div class="container" style="margin-top:30px;">
+  <p style="color:#90caf9;">
+    Click a button above to access the syllabus, notes, question bank,
+    or previous‑year question papers for the IAU subject.
+  </p>
+</div>
+
+<!-- --------------------------------------------------------------
+     FOOTER
+     -------------------------------------------------------------- -->
+<footer style="text-align:center;margin-top:40px;">
   © Mohammad Shafiquddin | Senior Lecturer – Electronics & Telecommunication
 </footer>
+
+<!-- --------------------------------------------------------------
+     ACCORDION SCRIPT – kept for consistency (used on other pages)
+     -------------------------------------------------------------- -->
+<script>
+document.querySelectorAll(".accordion").forEach(acc => {
+  acc.addEventListener("click", () => {
+    acc.classList.toggle("active");
+    const panel = acc.nextElementSibling;
+    panel.style.display =
+      panel.style.display === "block" ? "none" : "block";
+  });
+});
+</script>
+
+<!-- --------------------------------------------------------------
+     VISITOR COUNTER (same style as the rest of the site)
+     -------------------------------------------------------------- -->
+<div style="text-align:center;margin-top:15px;">
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=msdin24.iau"
+       alt="visitor counter">
+</div>
+
 </body>
 </html>
