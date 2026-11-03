@@ -4,14 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>E & TC | Digital Learning Portal</title>
+<title>E &amp; TC | Digital Learning Portal</title>
 
-<!-- COMMON CSS -->
-<link rel="stylesheet" href="style.css">
+<!-- COMMON CSS – note the relative path because this file lives in /home -->
+<link rel="stylesheet" href="../style.css">
 
 <!-- ICONS -->
 <link rel="stylesheet"
- href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
@@ -19,25 +19,26 @@
 <!-- NAVBAR -->
 <div class="navbar">
   <a href="index.html">Home</a>
-  <a href="ete.html">ETE</a>
-  <a href="drt.html">DRT</a>
-  <a href="dte.html">DTE</a>
-  <a href="dem.html">DEM</a>
-  <a href="mwc.html">MWC</a>
-  <a href="notice.html">Updates</a>
-  <a href="about.html">About</a>
+  <a href="../iau/iau.html">IAU</a>               <!-- NEW -->
+  <a href="../ete/ete.html">ETE</a>
+  <a href="../drt/drt.html">DRT</a>
+  <a href="../dte/dte.html">DTE</a>
+  <a href="../dem/dem.html">DEM</a>
+  <a href="../mwc/mwc.html">MWC</a>
+  <a href="../notice/notice.html">Updates</a>
+  <a href="../about/about.html">About</a>
 </div>
 
 <!-- HEADER -->
 <div class="container" style="text-align:center;padding-top:60px;padding-bottom:30px;">
-  <h1>Electronics & Telecommunication</h1>
+  <h1>Electronics &amp; Telecommunication</h1>
 
   <p style="color:#cfd8dc;">
     Digital Learning Resource Portal
   </p>
 
   <p style="font-size:14px;color:#90caf9;">
-    Faculty-curated academic resources for student learning
+    Faculty‑curated academic resources for student learning
   </p>
 </div>
 
@@ -63,7 +64,7 @@
 
       <p style="color:#cfd8dc;margin-top:8px;">
         Senior Lecturer<br>
-        Electronics & Telecommunication Engineering
+        Electronics &amp; Telecommunication Engineering
       </p>
 
       <p style="font-size:14px;color:#90caf9;margin-top:12px;">
@@ -95,7 +96,7 @@
       </div>
 
       <button class="btn" style="margin-top:20px;"
-              onclick="location.href='about.html'">
+              onclick="location.href='../about/about.html'">
         View Full Profile
       </button>
 
@@ -108,11 +109,12 @@
   <div class="panel">
 
     <div style="text-align:center;">
-      <button class="btn" onclick="location.href='ete.html'">ETE</button>
-      <button class="btn" onclick="location.href='drt.html'">DRT</button>
-      <button class="btn" onclick="location.href='dte.html'">DTE</button>
-      <button class="btn" onclick="location.href='dem.html'">DEM</button>
-      <button class="btn" onclick="location.href='mwc.html'">MWC</button>
+      <button class="btn" onclick="location.href='../iau/iau.html'">IAU</button>   <!-- NEW -->
+      <button class="btn" onclick="location.href='../ete/ete.html'">ETE</button>
+      <button class="btn" onclick="location.href='../drt/drt.html'">DRT</button>
+      <button class="btn" onclick="location.href='../dte/dte.html'">DTE</button>
+      <button class="btn" onclick="location.href='../dem/dem.html'">DEM</button>
+      <button class="btn" onclick="location.href='../mwc/mwc.html'">MWC</button>
     </div>
 
   </div>
@@ -122,10 +124,10 @@
   <div class="panel">
 
     <p>📌 New subject presentations and notes uploaded</p>
-    <p>📌 Unit-wise and semester-wise resources updated</p>
+    <p>📌 Unit‑wise and semester‑wise resources updated</p>
     <p>📌 Students are advised to check updates regularly</p>
 
-    <button class="btn" onclick="location.href='notice.html'">
+    <button class="btn" onclick="location.href='../notice/notice.html'">
       View All Updates
     </button>
 
@@ -136,9 +138,9 @@
   <div class="panel">
 
     <p>
-      This portal provides structured, subject-wise academic resources
+      This portal provides structured, subject‑wise academic resources
       including notes, presentations, question banks, and learning updates
-      to support effective teaching and self-learning.
+      to support effective teaching and self‑learning.
     </p>
 
     <p>
@@ -171,7 +173,6 @@ document.querySelectorAll(".accordion").forEach(acc=>{
   <img src="https://visitor-badge.laobi.icu/badge?page_id=msdin24.index.html"
        alt="visitor counter">
 </div>
-
 
 </body>
 </html>
