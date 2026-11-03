@@ -2,33 +2,88 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>IAU - IoT Applications Notes</title>
-<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IAU | Notes</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+
+<!-- NAVBAR -->
 <div class="navbar">
-  <a href="index.html">Home</a>
-  <a href="ete.html">ETE</a>
-  <a href="drt.html">DRT</a>
-  <a href="dte.html">DTE</a>
-  <a href="dem.html">DEM</a>
-  <a href="mwc.html">MWC</a>
-  <a href="notice.html">Updates</a>
-  <a href="about.html">About</a>
+  <a href="../home/index.html">Home</a>
   <a href="iau.html">IAU</a>
+  <a href="../ete/ete.html">ETE</a>
+  <a href="../drt/drt.html">DRT</a>
+  <a href="../dte/dte.html">DTE</a>
+  <a href="../dem/dem.html">DEM</a>
+  <a href="../mwc/mwc.html">MWC</a>
+  <a href="../notice/notice.html">Updates</a>
+  <a href="../about/about.html">About</a>
 </div>
-<div class="container" style="text-align:center;padding-top:60px;padding-bottom:30px;">
-  <h1>IAU - IoT Applications Notes</h1>
-  <ul style="list-style:none; padding:0;">
-    <li><a class="btn" href="iau-note-1.html">Chapter 1</a></li>
-    <li><a class="btn" href="iau-note-2.html">Chapter 2</a></li>
-    <li><a class="btn" href="iau-note-3.html">Chapter 3</a></li>
-    <li><a class="btn" href="iau-note-4.html">Chapter 4</a></li>
-    <li><a class="btn" href="iau-note-5.html">Chapter 5</a></li>
-  </ul>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb">
+  <a href="../home/index.html">Home</a> ›
+  <a href="iau.html">IAU</a> ›
+  <span>Notes</span>
 </div>
-<footer>
-  © Mohammad Shafiquddin | Senior Lecturer – Electronics & Telecommunication
-</footer>
+
+<div class="container">
+<h1>IAU – IoT Applications – Notes</h1>
+
+<!-- ================= CHAPTER LIST ================= -->
+<button class="accordion">Chapter 1 – Introduction to IoT</button>
+<div class="panel">
+  <button class="btn" onclick="location.href='iau-note-1.html'">
+    <i class="fa-solid fa-file-pdf"></i> View Chapter 1
+  </button>
+</div>
+
+<button class="accordion">Chapter 2 – IoT Architecture</button>
+<div class="panel">
+  <button class="btn" onclick="location.href='iau-note-2.html'">
+    <i class="fa-solid fa-file-pdf"></i> View Chapter 2
+  </button>
+</div>
+
+<button class="accordion">Chapter 3 – Sensors &amp; Actuators</button>
+<div class="panel">
+  <button class="btn" onclick="location.href='iau-note-3.html'">
+    <i class="fa-solid fa-file-pdf"></i> View Chapter 3
+  </button>
+</div>
+
+<button class="accordion">Chapter 4 – Cloud Integration</button>
+<div class="panel">
+  <button class="btn" onclick="location.href='iau-note-4.html'">
+    <i class="fa-solid fa-file-pdf"></i> View Chapter 4
+  </button>
+</div>
+
+<button class="accordion">Chapter 5 – Security &amp; Privacy</button>
+<div class="panel">
+  <button class="btn" onclick="location.href='iau-note-5.html'">
+    <i class="fa-solid fa-file-pdf"></i> View Chapter 5
+  </button>
+</div>
+
+</div>
+
+<!-- ACCORDION SCRIPT -->
+<script>
+document.querySelectorAll('.accordion').forEach(acc=>{
+  acc.addEventListener('click',()=>{
+    acc.classList.toggle('active');
+    const panel = acc.nextElementSibling;
+    panel.style.display = panel.style.display === 'block' ? 'none' : 'block';
+  });
+});
+</script>
+
+<div style="text-align:center;margin-top:15px;">
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=msdin24.iau-notes" alt="visitor counter">
+</div>
+
 </body>
 </html>
