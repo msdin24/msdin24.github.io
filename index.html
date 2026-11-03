@@ -1,5 +1,3 @@
-# Run this in PowerShell (you’re already in the project folder)
-$indexContent = @"
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +5,10 @@ $indexContent = @"
 <title>Home – Embedded System Portal</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<!-- GLOBAL STYLES -->
 <link rel="stylesheet" href="style.css">
+
+<!-- FONT AWESOME -->
 <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
@@ -27,7 +28,8 @@ $indexContent = @"
 </div>
 
 <!-- HEADER -->
-<div class="container" style="text-align:center;padding-top:60px;padding-bottom:30px;">
+<div class="container"
+     style="text-align:center;padding-top:60px;padding-bottom:30px;">
   <h1>Electronics &amp; Telecommunication</h1>
   <p style="color:#cfd8dc;">Digital Learning Resource Portal</p>
 </div>
@@ -51,9 +53,11 @@ $indexContent = @"
   © Mohammad Shafiquddin | Senior Lecturer – Electronics & Telecommunication
 </footer>
 
+<!-- ACCORDION SCRIPT (same as other pages) -->
 <script>
-document.querySelectorAll(".accordion").forEach(acc=>{
-  acc.addEventListener("click",()=>{ acc.classList.toggle("active");
+document.querySelectorAll(".accordion").forEach(acc => {
+  acc.addEventListener("click", () => {
+    acc.classList.toggle("active");
     const panel = acc.nextElementSibling;
     panel.style.display = panel.style.display === "block" ? "none" : "block";
   });
@@ -67,6 +71,3 @@ document.querySelectorAll(".accordion").forEach(acc=>{
 
 </body>
 </html>
-"@
-
-Set-Content -Path "index.html" -Value $indexContent -Encoding UTF8
